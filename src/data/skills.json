@@ -1,0 +1,31 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "assets/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "assets/css.png"
+    },
+    {
+      "title": "JAVASCRIPT",
+      "imageSrc": "assets/js1.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "assets/react.png"
+    },
+    {
+      "title": "Node",
+      "imageSrc": "assets/nodejs.png"
+    },
+   
+    {
+      "title": "MongoDB",
+      "imageSrc": "assets/mongodb.png"
+    },
+    {
+      "title": "Figma",
+      "imageSrc": "assets/figma.png"
+    }
+  ]

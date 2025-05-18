@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Portfolio",
+      "imageSrc": "assets/portfolio.png",
+      "description": "This is my personal portfolio which showcases my skills and achievements dynamically.It have a responsive features which adjusts and works according to screens.",
+      "skills": ["React","CSS"],
+      "demo": "",
+      "source": ""
+    },
+    {
+      "title": "Hall Management Center(HMC)",
+      "imageSrc": "assets/hmc.png",
+      "description": "It is an dynamic website which can be used by universities to manage student accomodations.",
+      "skills": ["HTML", "CSS", "Javascript","PHP", "MYSQL"],
+      "demo": "https://localhost/HMC/",
+      "source": "https://github.com/sailakshmi-0987/HMC-Project.git"
+    },
+    {
+      "title": "TO-DO",
+      "imageSrc": "assets/todo.png",
+      "description": "This is a project designed to manage day to day works.It assists the users to efficiently manage their tasks.",
+      "skills": ["HTML", "CSS", "Javascript","PHP","MYSQL"],
+      "demo": "https://localhost/todoapp/",
+      "source": "https://github.com/sailakshmi-0987/Task-Manager.git"
+    }
+  ]
