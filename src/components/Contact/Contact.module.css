@@ -1,0 +1,67 @@
+@import "../../vars.css";
+
+.contactSection {
+    margin: 80px 10%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    color: var(--color-text);
+}
+
+.heading {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: var(--font-roboto);
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+    font-size: 1rem;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-family: var(--font-roboto);
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.contactForm button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #1749a3;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 16px;
+}
