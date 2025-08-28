@@ -10,7 +10,7 @@ export const Footer = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src="assets/message.png" alt="Email icon" />
+          <img src="./assets/message.png" alt="Email icon" />
           <a href="mailto:gajulapallisailakshmi@gmail.com">gajulapallisailakshmi@gmail.com</a>
         </li>
         <li className={styles.link}>
