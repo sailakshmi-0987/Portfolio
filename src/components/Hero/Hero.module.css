@@ -11,6 +11,9 @@
     z-index: 1;
 }
 
+/* -------------------------
+   Content Section
+------------------------- */
 .content {
     flex: 1;
     min-width: 300px;
@@ -19,6 +22,7 @@
     align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
+    animation: fadeInUp 1s ease forwards;
 }
 
 .title {
@@ -26,9 +30,13 @@
     font-weight: 900;
     margin-bottom: 24px;
     font-family: var(--font-roboto);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 120%);
-    -webkit-text-fill-color: transparent;
+
+    /* Gradient text */
+    background: linear-gradient(90deg, #00ffe0 0%, #00bfff 50%, #ffffff 100%);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fadeInUp 1.2s ease forwards;
 }
 
 .description {
@@ -36,8 +44,13 @@
     font-family: var(--font-roboto);
     margin-bottom: 40px;
     line-height: 1.5;
+    opacity: 0.9;
+    animation: fadeInUp 1.6s ease forwards;
 }
 
+/* -------------------------
+   Contact Button
+------------------------- */
 .contactBtn {
     text-decoration: none;
     background-color: var(--color-primary);
@@ -46,15 +59,19 @@
     font-size: 1.25rem;
     font-weight: 600;
     padding: 14px 28px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 255, 224, 0.5);
+    transition: all 0.3s ease;
 }
 
 .contactBtn:hover {
     background-color: #1749a3;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 224, 0.7);
 }
 
+/* -------------------------
+   Hero Image
+------------------------- */
 .heroimg {
     flex: 1;
     max-width: 400px;
@@ -64,21 +81,29 @@
     border-radius: 50%;
     z-index: 1;
 
-    animation: floating 3s ease-in-out infinite;
+    /* Floating animation */
+    animation: floating 3s ease-in-out infinite, fadeInUp 2s ease forwards;
+
+    /* Subtle glow */
+    box-shadow: 0 0 20px rgba(0, 255, 224, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes floating {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(-10px); }
+.heroimg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 255, 224, 0.6);
 }
 
+/* -------------------------
+   Background Blurs
+------------------------- */
 .topBlur, .bottomBlur {
     position: absolute;
     border-radius: 764px;
     background: rgba(25, 55, 109, 0.7);
     filter: blur(100px);
     z-index: 0;
+    animation: pulseBlur 6s ease-in-out infinite alternate;
 }
 
 .topBlur {
@@ -97,6 +122,34 @@
     min-width: 250px;
 }
 
+/* -------------------------
+   Animations
+------------------------- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulseBlur {
+    from { opacity: 0.4; transform: scale(1); }
+    to { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* -------------------------
+   Responsive
+------------------------- */
 @media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;

@@ -1,26 +1,94 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
-  color: var(--color-text);
+  margin-top: 100px;
   margin-left: 10%;
   margin-right: 10%;
+  color: var(--color-text);
+  text-align: center;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 50px;
 }
 
 .projects {
-  margin-top: 37px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 25px;
   justify-content: center;
-  gap: 15px;
   width: 100%;
+}
+
+/* Project Card Style */
+.projectCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 25px;
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside Project Card */
+.projectImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-accent);
+}
+
+.projectDesc {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.projectLink {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.projectLink:hover {
+  background: var(--color-accent-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    width: 100%;
+    max-width: 400px;
+  }
 }
