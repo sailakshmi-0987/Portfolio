@@ -28,7 +28,7 @@
       "imageSrc": "assets/todo.png",
       "description": "This is a project designed to manage day to day works.It assists the users to efficiently manage their tasks.",
       "skills": ["HTML", "CSS", "Javascript","PHP","MYSQL"],
-      "demo": "https://localhost/todoapp/",
+      "demo": "https://github.com/sailakshmi-0987/Task-Manager.git",
       "source": "https://github.com/sailakshmi-0987/Task-Manager.git"
     }
   ]
