@@ -1,11 +1,19 @@
 [
-    {
+  {
+      "title": "DevTinder",
+      "imageSrc": "assets/DevTinder.png",
+      "description": "A full-stack MERN web application that connects developers by enabling profile creation, authentication, and real-time interactions. Implemented secure login with Google OAuth and JWT-based authentication, role-based access, and REST APIs for user connections. Designed a responsive UI with React and Redux, ensuring seamless state management and smooth user experience.",
+      "skills": ["React","TailwindCSS","Nodejs","MongoDB","ExpressJs"],
+      "demo": "https://dev-tinder-frontend-tan.vercel.app",
+      "source": "https://github.com/sailakshmi-0987/DevTinder.git"
+    },  
+  {
       "title": "Portfolio",
       "imageSrc": "assets/portfolio.png",
       "description": "This is my personal portfolio which showcases my skills and achievements dynamically.It have a responsive features which adjusts and works according to screens.",
       "skills": ["React","CSS"],
-      "demo": "",
-      "source": ""
+      "demo": "https://portfolio-six-green-anvkn5dhh.vercel.app",
+      "source": "https://github.com/sailakshmi-0987/portfolio.git"
     },
     {
       "title": "Hall Management Center(HMC)",
