@@ -20,7 +20,7 @@
       "imageSrc": "assets/hmc.png",
       "description": "It is an dynamic website which can be used by universities to manage student accomodations.",
       "skills": ["HTML", "CSS", "Javascript","PHP", "MYSQL"],
-      "demo": "https://localhost/HMC/",
+      "demo": "https://hall-management.wuaze.com/",
       "source": "https://github.com/sailakshmi-0987/HMC-Project.git"
     },
     {
